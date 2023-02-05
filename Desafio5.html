@@ -1,0 +1,78 @@
+<html lang="pt-br">
+	<head>
+		<title>Desafio 5</title>
+		<meta charset="UTF-8">
+		<style>
+		body{
+		background-color: #90ff17;
+		color: black;
+		font-size: 12pt;
+		font-family: arial, 'times new roman';
+		font-style: italic;
+		}
+		</style>
+		<script>
+		
+			//Aluno: Marcelo Luiz dos Santos.
+		
+			//Declarando as Variáveis:
+			let pessoa= "Aluno:";
+			let aluno= " Marcelo Luiz Dos Santos.";
+			let i, valorFinal;
+			let total = 0.0;
+			let quant = new Array();
+			let notas= new Array();
+			let mediafinal, estudante;
+			
+			//COR
+			let aprovado= "Aprovado(a)";
+			let aprovadoCor=aprovado.fontcolor("blue");
+			
+			let reprovado= "Reprovado(a)";
+			let reprovadoCor=reprovado.fontcolor("red");
+			
+			let recuperacao= "Recuperação";
+			let recuperacaoCor=recuperacao.fontcolor("orange");
+
+			//Determinando a Quantidade para o armazenamento das informações no Comando FOR por meio do New Array:
+			quant=parseInt(prompt("Você deseja obter o Calculo da Média e a Situação de quantos Alunos? " , " Digite aqui "));
+			
+			//Ultilizando o For:
+			for(i=0; i<quant; i++) {
+			//Atribuindo Notas:
+			estudante=(prompt("Digite o Nome do Estudante: " , " Digite aqui "));
+			let estudanteCor=estudante.fontcolor("purple");
+			notas[0]=parseFloat(prompt("Digite a Primeira Nota: ", "Digite Aqui ... "));
+			notas[1]=parseFloat(prompt("Digite a Segunda Nota: ", "Digite Aqui ... "));
+			notas[2]=parseFloat(prompt("Digite a Terceira Nota: ", "Digite Aqui ... "));
+			notas[3]=parseFloat(prompt("Digite a Quarta Nota: ", "Digite Aqui ... "));
+			mediafinal= (notas[0] + notas[1] + notas[2] + notas[3])/4;
+			total= mediafinal;
+			
+			//Escrevendo no documento:
+			document.write("<br> As Notas de " + estudanteCor + " digitadas foram: " + notas + " .............. onde a Média Final é: " + total.toFixed(2) + " ." + "<br>");
+			
+			//Comandos IF
+			if(mediafinal>=8){
+			document.write("<br> Você está " +aprovadoCor+ " !!<br>");
+			}else if(mediafinal<=7){ 
+			document.write("<br> Você está " +reprovadoCor+ " !<br>");
+			}else { 
+			document.write("<br> Você está de " +recuperacaoCor+ " !<br>");
+			}
+			}
+			
+			valorFinal = total;
+			
+			//Executando o Comando Alert:
+			alert("Professora Máyra, Gostei MUITO dos Exercícios e dei uma diferenciada de cores e fontes com o intuíto de desenvolver e praticar ainda mais o que está sendo passado, tanto nas aulas da Senhora quanto na dos demais Componentes.");
+			
+			//Escrevendo as Variáveis:
+			document.write("<br><br>  " + pessoa + aluno + "<br>");
+
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

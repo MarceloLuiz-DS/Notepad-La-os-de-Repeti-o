@@ -1,0 +1,54 @@
+<html lang="pt-br">
+	<head>
+		<title>Desafio 3</title>
+		<meta charset="UTF-8">
+		<style>
+		body{
+		background-color: #996699;
+		color: white;
+		font-size: 12pt;
+		font-family: arial, 'times new roman';
+		font-style: italic;
+		}
+		</style>
+		<script>
+		
+			//Aluno: Marcelo Luiz dos Santos.
+		
+			//Declarando as Variáveis:
+			let pessoa= "Aluno:";
+			let aluno= " Marcelo Luiz Dos Santos.";
+			let fim;
+			let produto;
+			let preco;
+			let total = 0.0;
+			let valorFinal;
+			
+			document.write("<br><br> Sua Compra: <br>");
+			
+			//Ultilizando o Do While:
+			do {
+			//Faça o Bloco de comandos.
+			produto=(prompt("Digite o Nome do Produto ou fim para sair: "));
+			
+			preco=parseFloat(prompt("Digite o Preço do (a) " + produto + ": R$ ", " Digite aqui ... "));
+			total= total + preco;
+			
+			document.write("<br>" + produto + " ............. R$ " +preco.toFixed(2)+ "<br>");
+			
+			valorFinal = total - preco; //Caso o usuário venha digitar algum valor acima de R$ 0.00, 
+										//após digitar "FIM", idependentemente do valor digitado, o mesmo não será somado ao calculo da compra.
+			
+			} while (produto != "fim"); //Enquanto Produto for diferente de Fim, o Programa contiunua.
+			
+			//Escrevendo as Variáveis:
+			document.write("<br><br>" + " O Valor total da compra foi de: " + valorFinal.toFixed(2) + "<br>" );
+			
+			document.write("<br>" + pessoa + aluno + "<br>");
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

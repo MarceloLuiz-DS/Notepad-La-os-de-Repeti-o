@@ -1,0 +1,59 @@
+<html lang="pt-br">
+	<head>
+		<title>Desafio 4</title>
+		<meta charset="UTF-8">
+		<style>
+		body{
+		background-color: #90ff90;
+		color: black;
+		font-size: 12pt;
+		font-family: arial, 'times new roman';
+		font-style: italic;
+		}
+		</style>
+		<script>
+		
+			//Aluno: Marcelo Luiz dos Santos.
+		
+			//Declarando as Variáveis:
+			let pessoa= "Aluno:";
+			let aluno= " Marcelo Luiz Dos Santos.";
+			let i, p, valorFinal;
+			let total = 0.0;
+			let quant = new Array();
+			let materiais = new Array();
+			let preco = new Array();
+			
+			//Determinando a Quantidade para o armazenamento das informações no Comando FOR por meio do New Array:
+			quant=parseInt(prompt("Digite a Quantidade de Materiais desejados: " , " Digite aqui "));
+			
+			//Escrevendo no documento:
+			document.write("<br><br>" + "A Lista de Materiais adquiridos é : " + "<br>");
+			
+			//Ultilizando o For:
+			for(i=0; i<quant; i++) {
+			materiais=(prompt("Digite o Nome do Material desejado: " , " Digite aqui "));
+			preco=parseFloat(prompt("Digite o valor Unitário de " + materiais + ": " , " Digite aqui "));
+			total= total + preco;
+			
+			//Escrevendo no documento:
+			document.write("<br>  " + materiais + " .............. Valor Unitário R$ " + preco.toFixed(2) + " ." + "<br>");
+			preco++;
+			}
+			
+			valorFinal = total;
+			
+			//Executando o Comando Alet:
+			alert("Professora Máyra, eu realmente tentei calcular o valor final da compra da Lista de Produtos. Contudo, após dois dias inteiros tentando, Eu Consegui!!!!!! Digo isto à Senhora, porque fiquei muito FELIZ. Pois, mesmo quebrando a cabeça, O ESFORÇO DE FATO, VALEU E VALE MUITO APENA!!!" );
+			
+			//Escrevendo no documento:
+			document.write("<br>  " + "O valor total da compra foi de R$: " + valorFinal.toFixed(2) + " ." + "<br>");
+			document.write("<br><br>  " + pessoa + aluno + "<br>");
+
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="pt-br">
+	<head>
+		<title>Desafio 1</title>
+		<meta charset="UTF-8">
+		<style>
+		body{
+		background-color: #7bc7;
+		font-size: 12pt;
+		font-family: arial, 'times new roman';
+		font-style: italic;
+		}
+		</style>
+		<script>
+		
+			//Aluno: Marcelo Luiz dos Santos.
+		
+			//Declarando as Variáveis:
+			let pessoa= "Aluno:";
+			let aluno= " Marcelo Luiz Dos Santos.";
+			let usuario, cal=0, i, resultado, tabuada;
+			
+			//Ultilizando o Comando Prompt:
+			tabuada=parseFloat(prompt("Digite a Tabuada que deseja ver: "));
+			i=parseFloat(prompt("Digite até a onde deseja que a sua tabuada vá: "));
+			
+			//Ultilizando o Do While:
+			do {
+				resultado = tabuada*cal;
+				
+				//Escrevendo no documento:
+				document.write("<br>" + tabuada + " X " + cal + " = " + resultado + "<br>");
+				cal++
+			
+			} while (cal <=i);
+			 
+			document.write("<br>" + pessoa + aluno + "<br>");
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
